@@ -1,0 +1,23 @@
+body {
+    background: #eee;
+}
+
+#main-body {
+    box-shadow: 0 0 35px #00000015;
+
+    margin-top: 2em;
+    padding: 1.5em 1.5em;
+
+    background: #fdfdfd;
+    border-top: 5px solid #cd0673;
+}
+
+#main-body > header {
+    margin-bottom: 2em;
+}
+
+@media (max-width: 575px) {
+    #main-body {
+        margin-top: 0em;
+    }
+}

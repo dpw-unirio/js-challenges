@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+
+    <title>JS - Challenges - 4</title>
+
+    <!--Incluir o jQuery-->
+    <script src="../shared/jquery/jquery-3.2.1.js"></script>
+
+    <!--Incluir o Bootstrap-->
+    <script src="../shared/bootstrap/js/popper.js"></script>
+    <script src="../shared/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../shared/bootstrap/css/bootstrap.css">
+
+    <!--Incluir o Font Awesome-->
+    <link rel="stylesheet" href="../shared/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../shared/base.css">
+
+    <!--Incluir o Vue-->
+    <script src="../shared/vue/vue.js"></script>
+
+    <script src="../shared/Test.js"></script>
+</head>
+<body>
+    <div id="main-body" class="container">
+        <header class="row">
+            <div class="col-sm text-center">
+                <h1>JavaScript - Challenges</h1>
+                <h2>Desafio 4 - Tente não engolir água!</h2>
+            </div>
+        </header>
+
+        <section class="row">
+
+            <div class="col-sm-12">
+                <blockquote class="blockquote text-center" style="padding: 1em 1em">
+                    <p class="mb-0">
+                        Só porque algo é tradicional não significa que há razão para fazê-lo, claro. A pirataria, por exemplo,
+                        é uma tradição que foi perpetuada por centenas de anos, mas não significa que devemos todos atacar
+                        navios e roubar seu ouro.
+                    </p>
+
+                    <footer class="blockquote-footer">
+                        Lemony Snicket em
+                        <cite title="Horseradish: Bitter Truths You Can't Avoid">Horseradish</cite>
+                    </footer>
+                </blockquote>
+            </div>
+
+            <div class="col-sm">
+                <p>
+                    Muito bem, parece que você já tem os fundamentos do JS como linguagem, agora vamos começar a fazer
+                    coisas de fato acontecerem!
+                </p>
+                <p>
+                    Aqui embaixo você vai ver um botão e ao lado dele está escrito "Olá mundo".
+                </p>
+                <p>
+                    O que você deve fazer é com que quando ele for clicado o texto mude para "Aqui o mundo é sereno".
+                </p>
+                <p>
+                    O botão tem o id <code>botao</code> e o texto tem id <code>texto</code>.
+                </p>
+                <p>
+                    Faças as honras e siga para o <code>challenge.js</code> jovem padawan.
+                </p>
+
+
+                <a class="btn btn-info float-right" data-toggle="collapse" href="#hints">
+                    <i class="fa fa-eye"></i> Veja as dicas
+                </a>
+
+                <p>
+                    <button class="btn btn-success" id="botao">Clique em mim! :3</button> <code id="texto">Olá mundo</code>
+                </p>
+
+                <div id="hints" class="collapse">
+                    <p>
+                        Para sua conveniência o <code>challenge.js</code> é incluído no final do documento,
+                        então não se preocupe em usar <code>document.onload</code>.
+                    </p>
+
+                    <p>Alguns links úteis:</p>
+
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document/getElementById">
+                                getElementById
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick">
+                                onclick
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML">
+                                innerHTML
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="row" id="vm">
+            <div class="col-sm">
+                <h2>Testes</h2>
+
+                <test :test="test" v-for="test in tests"></test>
+            </div>
+        </section>
+
+        <script src="challenge.js"></script>
+        <script src="vm.js"></script>
+    </div>
+</body>
+</html>

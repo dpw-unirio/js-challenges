@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+
+    <title>JS - Challenges - 6</title>
+
+    <!--Incluir o jQuery-->
+    <script src="../shared/jquery/jquery-3.2.1.js"></script>
+
+    <!--Incluir o Bootstrap-->
+    <script src="../shared/bootstrap/js/popper.js"></script>
+    <script src="../shared/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../shared/bootstrap/css/bootstrap.css">
+
+    <!--Incluir o Font Awesome-->
+    <link rel="stylesheet" href="../shared/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../shared/base.css">
+
+    <!--Incluir o Vue-->
+    <script src="../shared/vue/vue.js"></script>
+
+    <script src="../shared/Test.js"></script>
+</head>
+<body>
+    <div id="main-body" class="container">
+        <header class="row">
+            <div class="col-sm text-center">
+                <h1>JavaScript - Challenges</h1>
+                <h2>Desafio 6 - Phew...</h2>
+            </div>
+        </header>
+
+        <section class="row">
+
+            <div class="col-sm-10 offset-1">
+                <blockquote class="blockquote text-center" style="padding: 1em 1em">
+                    <p class="mb-0">
+                        Se você acha que pessoas que lêem tem menos chance de serem más, e que um mundo cheio de pessoas
+                        sentadas serenamente com bons livros em suas mãos é preferível a um mundo com rupturas e
+                        sirenes e outras coisas estressantes, então toda vez que você entrar em uma biblioteca você
+                        pode pensar consigo mesmo "O mundo é sereno aqui", como um tipo de juramento que proclama que
+                        ler é o bem maior.
+                    </p>
+
+                    <footer class="blockquote-footer">
+                        Lemony Snicket em
+                        <cite title="A Series of Unfortunate Events: The Slippery Slope">The Slippery Slope</cite>
+                    </footer>
+                </blockquote>
+            </div>
+
+            <div class="col-sm">
+                <p>
+                    Quem diria... Não tem nada aqui ainda!
+                </p>
+                <p>
+                    Nossa, que constrangedor... Juro que isso nunca aconteceu antes!
+                </p>
+                <p>
+                    Mas bem... <b>Parabéns!</b>
+                </p>
+                <p>
+                    <small>E, é isso... <small>valeu... <small>até a próxima...</small></small></small>
+                </p>
+            </div>
+
+        </section>
+
+        <section class="row" id="vm">
+            <div class="col-sm">
+                <h2>Testes</h2>
+
+                <test :test="test" v-for="test in tests"></test>
+
+                <div class="alert alert-warning" v-if="!tests.length">
+                    Ops... Parece que não achamos nenhum teste...
+                </div>
+            </div>
+        </section>
+
+        <script src="challenge.js"></script>
+        <script src="vm.js"></script>
+    </div>
+</body>
+</html>

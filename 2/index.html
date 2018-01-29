@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+
+    <title>JS - Challenges - Instruções</title>
+
+    <!--Incluir o jQuery-->
+    <script src="../shared/jquery/jquery-3.2.1.js"></script>
+
+    <!--Incluir o Bootstrap-->
+    <script src="../shared/bootstrap/js/popper.js"></script>
+    <script src="../shared/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../shared/bootstrap/css/bootstrap.css">
+
+    <!--Incluir o Font Awesome-->
+    <link rel="stylesheet" href="../shared/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../shared/base.css">
+
+    <!--Incluir o Vue-->
+    <script src="../shared/vue/vue.js"></script>
+
+    <script src="../shared/Test.js"></script>
+
+    <script src="challenge.js"></script>
+</head>
+<body>
+    <div id="main-body" class="container">
+        <header class="row">
+            <div class="col-sm text-center">
+                <h1>JavaScript - Challenges</h1>
+                <h2>Desafio 2 - 2</h2>
+            </div>
+        </header>
+
+        <section class="row">
+
+            <div class="col-sm-12">
+                <blockquote class="blockquote text-center" style="padding: 1em 1em">
+                    <p class="mb-0">
+                        Ler é uma forma de escape, correr pela sua vida é outra.
+                    </p>
+
+                    <footer class="blockquote-footer">
+                        Lemony Snicket em
+                        <cite title="A Series of Unfortunate Events: The Austere Academy">The Austere Academy</cite>
+                    </footer>
+                </blockquote>
+            </div>
+
+            <div class="col-sm">
+                <p>
+                    Okay, agora que você já está aquecido vamos para algo mais... <em>Interessante</em>...
+                </p>
+                <p>
+                    Abra o arquivo <code>challenge.js</code> e complete as funções que nem antes.
+                </p>
+                <p>
+                    Ah, e caso você esteja se perguntando como obter o valor de <kb>pi</kb>... <a href="http://bfy.tw/F03W" target="_blank">Fica a dica</a>!
+                </p>
+            </div>
+
+        </section>
+
+        <section class="row" id="vm">
+            <div class="col-sm">
+                <h2>Testes</h2>
+
+                <test :test="test" v-for="test in tests"></test>
+            </div>
+        </section>
+
+
+        <script src="vm.js"></script>
+    </div>
+</body>
+</html>

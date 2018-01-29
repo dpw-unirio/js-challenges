@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+
+    <title>JS - Challenges - 1</title>
+
+    <!--Incluir o jQuery-->
+    <script src="../shared/jquery/jquery-3.2.1.js"></script>
+
+    <!--Incluir o Bootstrap-->
+    <script src="../shared/bootstrap/js/popper.js"></script>
+    <script src="../shared/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../shared/bootstrap/css/bootstrap.css">
+
+    <!--Incluir o Font Awesome-->
+    <link rel="stylesheet" href="../shared/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../shared/base.css">
+
+    <!--Incluir o Vue-->
+    <script src="../shared/vue/vue.js"></script>
+
+    <script src="../shared/Test.js"></script>
+
+    <script src="challenge.js"></script>
+</head>
+<body>
+    <div id="main-body" class="container">
+        <header class="row">
+            <div class="col-sm text-center">
+                <h1>JavaScript - Challenges</h1>
+                <h2>Desafio 1 - Molhando os pés</h2>
+            </div>
+        </header>
+
+        <section class="row">
+
+            <div class="col-sm-12">
+                <blockquote class="blockquote text-center" style="padding: 1em 1em">
+                    <p class="mb-0">
+                        Pessoas más raramente tem tempo para ler, é um dos motivos pra sua maldade.
+                    </p>
+
+                    <footer class="blockquote-footer">
+                        Lemony Snicket em
+                        <cite title="A Series of Unfortunate Events: The Penultimate Peril">The Penultimate Peril</cite>
+                    </footer>
+                </blockquote>
+            </div>
+
+            <div class="col-sm">
+                <p>
+                    Para começar vamos com algo simples, abra o arquivo <code>challenge.js</code> e preencha as funções
+                    nele para que elas retornem os resultados esperados, atualize essa página usando
+                    <kbd>shift</kbd>+<kbd>f5</kbd> para testar.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="row" id="vm">
+            <div class="col-sm">
+                <h2>Testes</h2>
+
+                <test :test="test" v-for="test in tests"></test>
+            </div>
+        </section>
+
+
+        <script src="vm.js"></script>
+    </div>
+</body>
+</html>

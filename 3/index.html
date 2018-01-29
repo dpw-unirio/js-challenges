@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+
+    <title>JS - Challenges - 3</title>
+
+    <!--Incluir o jQuery-->
+    <script src="../shared/jquery/jquery-3.2.1.js"></script>
+
+    <!--Incluir o Bootstrap-->
+    <script src="../shared/bootstrap/js/popper.js"></script>
+    <script src="../shared/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../shared/bootstrap/css/bootstrap.css">
+
+    <!--Incluir o Font Awesome-->
+    <link rel="stylesheet" href="../shared/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../shared/base.css">
+
+    <!--Incluir o Vue-->
+    <script src="../shared/vue/vue.js"></script>
+
+    <script src="../shared/Test.js"></script>
+
+    <script src="challenge.js"></script>
+</head>
+<body>
+    <div id="main-body" class="container">
+        <header class="row">
+            <div class="col-sm text-center">
+                <h1>JavaScript - Challenges</h1>
+                <h2>Desafio 3 - Começando a nadar</h2>
+            </div>
+        </header>
+
+        <section class="row">
+
+            <div class="col-sm-12">
+                <blockquote class="blockquote text-center" style="padding: 1em 1em">
+                    <p class="mb-0">
+                        Não importa quem você é, onde você mora, ou quantas pessoas estão te perseguindo, o que você
+                        não lê é frequentemente tão importante quanto o que você lê.
+                    </p>
+
+                    <footer class="blockquote-footer">
+                        Lemony Snicket em
+                        <cite title="A Series of Unfortunate Events: The Vile Village">The Vile Village</cite>
+                    </footer>
+                </blockquote>
+            </div>
+
+            <div class="col-sm">
+                <p>
+                    Certo, parece que temos um profissional aqui! Vamos ver como você se sai agora...
+                </p>
+                <p>
+                    Já sabe como é, abre logo o <code>challenge.js</code> =D
+                </p>
+
+                <p>Alguns links úteis:</p>
+
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf">indexOf</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/length">length</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split">split</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse">reverse</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join">join</a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="row" id="vm">
+            <div class="col-sm">
+                <h2>Testes</h2>
+
+                <test :test="test" v-for="test in tests"></test>
+            </div>
+        </section>
+
+
+        <script src="vm.js"></script>
+    </div>
+</body>
+</html>

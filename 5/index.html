@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+
+    <title>JS - Challenges - 5</title>
+
+    <!--Incluir o jQuery-->
+    <script src="../shared/jquery/jquery-3.2.1.js"></script>
+
+    <!--Incluir o Bootstrap-->
+    <script src="../shared/bootstrap/js/popper.js"></script>
+    <script src="../shared/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../shared/bootstrap/css/bootstrap.css">
+
+    <!--Incluir o Font Awesome-->
+    <link rel="stylesheet" href="../shared/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../shared/base.css">
+
+    <!--Incluir o Vue-->
+    <script src="../shared/vue/vue.js"></script>
+
+    <script src="../shared/Test.js"></script>
+</head>
+<body>
+    <div id="main-body" class="container">
+        <header class="row">
+            <div class="col-sm text-center">
+                <h1>JavaScript - Challenges</h1>
+                <h2>Desafio 5 - Gasp! Glub glub glub...</h2>
+            </div>
+        </header>
+
+        <section class="row">
+
+            <div class="col-sm-10 offset-1">
+                <blockquote class="blockquote text-center" style="padding: 1em 1em">
+                    <p class="mb-0">
+                        Há muito tempo atrás, não havia essa coisa de escolas, e as crianças gastavam seus dias aprendendo
+                        uma profissão, uma frase que aqui quer dizer "em pé fazendo tarefas entediantes sob instrução de
+                        um adulto mandão". Eventualmente, no entanto, as pessoas perceberam que podiam deixar que as
+                        crianças se sentassem, e assim a primeira escola foi inventada.
+                    </p>
+
+                    <footer class="blockquote-footer">
+                        Lemony Snicket em
+                        <cite title="Horseradish: Bitter Truths You Can't Avoid">Horseradish</cite>
+                    </footer>
+                </blockquote>
+            </div>
+
+            <div class="col-sm">
+                <p>
+                    Excelente! Mal posso crer que você chegou até aqui!
+                </p>
+                <p>
+                    Vamos fazer algo um pouco mais complexo, agora quero que ao clicar no <code>botao</code> você pegue
+                    os números digitados nas caixas de texto <code>num1</code> e <code>num2</code> e some eles, então
+                    exiba o resultado na caixa de texto <code>resultado</code>
+                </p>
+                <p>
+                    Continue trilhando seu caminho no <code>challenge.js</code>, e lembre-se...
+                </p>
+                <p>
+                    O medo leva à raiva, a raiva leva ao ódio, o ódio leva ao sofrimento, e o sofrimento leva à gambiarra.
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <input id="num1" type="number" class="form-control" value="0">
+                            <span class="input-group-addon">+</span>
+                            <input id="num2" type="number" class="form-control" value="0">
+                            <span class="input-group-addon">=</span>
+                            <input id="resultado" type="number" class="form-control" value="0" disabled>
+                            <span class="input-group-btn">
+                                <button class="btn btn-success" id="botao"><i class="fa fa-calculator"></i> Calcular</button>
+                            </span>
+                        </div>
+                        <br>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a class="btn btn-info float-right" data-toggle="collapse" href="#hints">
+                            <i class="fa fa-eye"></i> Veja as dicas
+                        </a>
+                    </div>
+                </div>
+
+                <div id="hints" class="collapse">
+                    <p>
+                        Novamente, o <code>challenge.js</code> é incluído no final do documento, então não use
+                        <code>document.onload</code>.
+                    </p>
+
+                    <p>Alguns links úteis:</p>
+
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://www.w3schools.com/jsref/prop_text_value.asp">
+                                value
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/parseInt">
+                                parseInt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="row" id="vm">
+            <div class="col-sm">
+                <h2>Testes</h2>
+
+                <test :test="test" v-for="test in tests"></test>
+            </div>
+        </section>
+
+        <script src="challenge.js"></script>
+        <script src="vm.js"></script>
+    </div>
+</body>
+</html>
